@@ -13,7 +13,15 @@ class PostServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        // Provide routes
+        if (! $this->app->routesAreCached()) {
+            require __DIR__.'/../routes.php';
+        }
+
+        // Publish databse migrations
+        $this->publishes([
+            __DIR__.'/../Migrations/' => database_path('migrations')
+        ], 'migrations');
     }
 
     /**
