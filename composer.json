@@ -21,5 +21,9 @@
     },
     "autoload-dev": {
         "psr-4": {"Post\\": "tests/post"}
+<<<<<<< HEAD
     }
+=======
+    },
+>>>>>>> 6bada55333c57fff47c8ec816f78f8da3a1d75cc
 }
