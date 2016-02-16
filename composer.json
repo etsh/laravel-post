@@ -14,12 +14,12 @@
         }
     ],
     "require": {
-        "php": ">=5.3.0"
+        "php": ">=5.5.9"
     },
     "autoload": {
-        "psr-4": {"Post\\": "src/Post"}
+        "psr-4": {"Etsh\\Post\\": "src/Post"}
     },
     "autoload-dev": {
-        "psr-4": {"Post\\": "tests/Post"}
+        "psr-4": {"Etsh\\Post\\": "tests/Post"}
     }
 }
