@@ -1,0 +1,25 @@
+{
+    "name": "etsh/laravel-post",
+    "type": "laravel-component",
+    "description": "A blog content type for the laravel framework.",
+    "keywords": ["laravel","blog","post"],
+    "homepage": "https://github.com/etsh/laravel-post",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Simon Hunt",
+            "email": "contact@etsh.co.uk",
+            "homepage": "http://etsh.co.uk",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9"
+    },
+    "autoload": {
+        "psr-4": {"Etsh\\Post\\": "src/Post/"}
+    },
+    "autoload-dev": {
+        "psr-4": {"Etsh\\Post\\": "tests/Post/"}
+    }
+}
