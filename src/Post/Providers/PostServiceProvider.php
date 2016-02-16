@@ -1,6 +1,6 @@
 <?php
 
-namespace Etsh\Post\Providers\PostServiceProvider;
+namespace Etsh\Post\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
