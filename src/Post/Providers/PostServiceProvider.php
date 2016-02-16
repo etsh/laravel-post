@@ -22,6 +22,9 @@ class PostServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__.'/../Migrations/' => database_path('migrations')
         ], 'migrations');
+
+        // Link views
+        $this->loadViewsFrom(__DIR__.'/../Views', 'Post');
     }
 
     /**
@@ -31,6 +34,8 @@ class PostServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        $this->app->bind('\Etsh\Post\Repositories\PostRepositoryInterface', function ($app) {
+            return new \Etsh\Post\Repositories\EloquentPostRepository;
+        });
     }
 }
